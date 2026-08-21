@@ -1,0 +1,34 @@
+# Google Colab Requirements
+# These are installed automatically in the Colab notebook
+
+# PyTorch with CUDA support
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Diffusion models
+diffusers>=0.21.0
+transformers>=4.30.0
+accelerate>=0.20.0
+safetensors>=0.3.0
+
+# Image/Video processing
+opencv-python>=4.8.0
+pillow>=10.0.0
+numpy>=1.24.0
+
+# HuggingFace
+huggingface-hub>=0.16.0
+
+# Quantization
+optimum-quanto>=0.1.0
+
+# YOLO for segmentation
+ultralytics>=8.0.0
+
+# Amazon Nova (optional)
+openai>=1.0.0
+python-dotenv>=1.0.0
+
+# Finegrain toolbox (installed via git)
+# git+https://github.com/finegrain-ai/finegrain-toolbox.git

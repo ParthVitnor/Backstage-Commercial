@@ -1,0 +1,27 @@
+{
+  "project_name": "BackstageCommercials",
+  "version": "1.0",
+  
+  "processing_options": {
+    "use_quantization": true,
+    "min_shot_duration_sec": 1.0,
+    "max_shot_duration_sec": 5.0,
+    "scene_detection_threshold": 30.0
+  },
+  
+  "product_info": {
+    "description": "Coffee jar",
+    "placement_area": "bottom_right"
+  },
+  
+  "output_settings": {
+    "video_codec": "mp4v",
+    "quality": "high",
+    "filename": "final_video_with_product.mp4"
+  },
+  
+  "api_keys": {
+    "nova_api_key": "",
+    "comment": "Leave empty if not using Nova API"
+  }
+}

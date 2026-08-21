@@ -1,0 +1,182 @@
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║     GOOGLE COLAB VIDEO PROCESSING - QUICK START                 ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+
+
+📋 THE SIMPLE 5-STEP PROCESS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+STEP 1: Open Colab Notebook
+────────────────────────────
+1. Go to: https://colab.research.google.com/
+2. Upload: BackstageCommercials_Colab.ipynb
+3. Change runtime: GPU (T4)
+
+
+STEP 2: Upload Your Files
+──────────────────────────
+Upload to Colab:
+  • Your video (movie.mp4)
+  • Product image (coffee.png)
+
+
+STEP 3: Configure & Run
+────────────────────────
+1. Edit PRODUCT_DESCRIPTION = "Coffee jar"
+2. Click "Runtime → Run all"
+3. Wait ~15 minutes ☕
+
+
+STEP 4: Download Result
+────────────────────────
+Colab downloads: final_video_with_product.mp4
+Goes to: ~/Downloads/
+
+
+STEP 5: Move to Frontend
+─────────────────────────
+Terminal:
+  mv ~/Downloads/final_video_with_product.mp4 \
+     frontend/prime-video-ui/public/videos/
+
+
+DONE! ✅
+────────
+Start frontend: npm run dev
+Open: http://localhost:5173
+User watches video with ads!
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+📊 WHAT HAPPENS IN COLAB
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Your Files                  Colab Processing              Output
+──────────                  ────────────────              ──────
+
+movie.mp4       →  1. Analyze scenes          
+                   2. Find best spot           
+coffee.png      →  3. Generate with FLUX  →   final_video.mp4
+                   4. Render full video        (with product!)
+                   5. Download ready
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+🎬 EXAMPLE WORKFLOW
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. You have: suits_episode.mp4 + coffee.png
+
+2. Upload to Colab
+
+3. Colab processes (automated):
+   ├─ Finds good scene
+   ├─ Places coffee jar naturally  
+   └─ Renders new video
+
+4. You download: suits_with_coffee.mp4
+
+5. Move to: frontend/prime-video-ui/public/videos/
+
+6. User opens frontend:
+   ├─ Sees "Suits Episode" 
+   ├─ Clicks play
+   ├─ Coffee appears naturally in scene
+   ├─ Clicks "Buy" button
+   └─ Added to Amazon cart!
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+⏱️  TIME ESTIMATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Upload to Colab:          2-5 minutes   (manual)
+Colab Processing:         10-25 minutes (automatic)
+Download:                 1-2 minutes   (automatic)
+Move to frontend:         10 seconds    (manual)
+───────────────────────────────────────────────────
+Total:                    13-32 minutes
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+✅ CHECKLIST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Before Processing:
+  □ Have original video file
+  □ Have product image (PNG with transparent background is best)
+  □ Google account for Colab
+  
+During Processing:
+  □ Colab notebook uploaded
+  □ GPU runtime enabled
+  □ Files uploaded to Colab
+  □ PRODUCT_DESCRIPTION configured
+  □ All cells running
+  
+After Processing:
+  □ Video downloaded successfully
+  □ Video moved to frontend/public/videos/
+  □ Frontend server running
+  □ Video plays correctly
+  □ Product looks natural
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+💡 PRO TIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Use videos with stable backgrounds
+✓ Use product images with transparent backgrounds
+✓ Keep video clips under 1 minute for faster processing
+✓ Process multiple videos in batch
+✓ Save to Google Drive to avoid re-uploading
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+📁 FILE LOCATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Your MacBook:
+  BackstageCommercials/
+  ├── google_colab/
+  │   └── BackstageCommercials_Colab.ipynb  ← Upload this
+  │
+  ├── input_files/
+  │   ├── movie.mp4          ← Start here
+  │   └── coffee.png         ← Start here
+  │
+  └── frontend/prime-video-ui/public/videos/
+      └── final_video.mp4    ← End here (after download)
+
+
+═══════════════════════════════════════════════════════════════════
+
+
+🚀 READY TO START!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Open the notebook and follow the cells step by step!
+
+Questions? See: google_colab/README.md
+
+
+Happy Video Processing! 🎬✨
+
+
+═══════════════════════════════════════════════════════════════════

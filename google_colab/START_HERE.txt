@@ -1,0 +1,104 @@
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║              GOOGLE COLAB FOLDER - START HERE                    ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+
+
+📚 WHAT'S IN THIS FOLDER
+
+This folder contains everything to process videos on Google Colab.
+
+
+📄 FILES YOU NEED:
+
+1. BackstageCommercials_Colab.ipynb  ⭐ MAIN FILE
+   → Upload this to Google Colab
+   → Contains all processing code
+   → Run all cells to process video
+
+2. QUICK_START.txt
+   → 5-step quick reference
+   → Read this first!
+
+3. README.md
+   → Detailed instructions
+   → Setup guide
+
+4. WORKFLOW_GUIDE.md
+   → Complete workflow explanation
+   → Step-by-step examples
+
+5. requirements_colab.txt
+   → List of dependencies
+   → Installed automatically in notebook
+
+6. sample_config.json
+   → Configuration template
+   → Edit if needed
+
+
+🎯 HOW TO USE
+
+QUICKEST WAY (5 steps):
+
+1. Open: https://colab.research.google.com/
+2. Upload: BackstageCommercials_Colab.ipynb
+3. Enable GPU runtime
+4. Upload your video + product image
+5. Click "Run all"
+
+Wait 15 minutes → Download result → Done! ✅
+
+
+🎬 WHAT THIS DOES
+
+INPUT:
+  • Your video (movie.mp4)
+  • Product image (coffee.png)
+
+PROCESSING (Automated on GPU):
+  • Analyzes scenes
+  • Finds best placement spot
+  • Generates product with FLUX AI
+  • Renders complete video
+
+OUTPUT:
+  • final_video_with_product.mp4
+  • Product naturally embedded
+  • Ready for users to watch!
+
+
+📥 AFTER PROCESSING
+
+1. Download video from Colab
+
+2. Move to frontend folder:
+   mv ~/Downloads/final_video_with_product.mp4 \
+      frontend/prime-video-ui/public/videos/
+
+3. Start frontend:
+   cd frontend/prime-video-ui && npm run dev
+
+4. Open: http://localhost:5173
+
+5. Users watch video with ads! 🎉
+
+
+✅ QUICK CHECKLIST
+
+□ Have video file
+□ Have product image
+□ Have Google account
+□ Read QUICK_START.txt
+□ Upload notebook to Colab
+□ Enable GPU
+□ Process video
+□ Download result
+□ Move to frontend folder
+□ Test playback
+
+
+🚀 READY TO START!
+
+Next step: Open QUICK_START.txt
